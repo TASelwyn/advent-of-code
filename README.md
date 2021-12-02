@@ -1,2 +1,2 @@
 # advent-of-code
-First year of advent of code, just submitting my solutions here
+My attempts at [Advent of Code](https://adventofcode.com/). Nothing super clean, just functional.
