@@ -32,5 +32,5 @@ for day in range(256):
     print(f"Day {day + 1} simulation ran. Total count: {sum(fish_day_count)}")
 
 print("***" * 20)
-print(f"Final answer for 256 simualations is {sum(fish_day_count)} fishies")
+print(f"Final answer for 256 simulations is {sum(fish_day_count)} fishies")
 print("***" * 20)
