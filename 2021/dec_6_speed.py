@@ -1,6 +1,7 @@
 # Thomas Selwyn
 # 06-Dec-2021
 # The Speed Version
+from datetime import datetime
 
 fish_day_count = [0] * 9
 
@@ -19,18 +20,16 @@ def progressFishyTheSpeedyWay():
 
     # Shift da fishy array (moves the mommy fishies closer to birthing)
     fish_day_count = fish_day_count[1:]
-    fish_day_count.append(0)
 
-    # Reset mothers & Add da fishies
+    # Reset mothers & Add da baby fishies
     fish_day_count[6] += mommy_fishes_birthing
-    fish_day_count[8] += mommy_fishes_birthing
+    fish_day_count.append(mommy_fishes_birthing)
 
 
 # Simulate 256 days the speedy way
 for day in range(256):
     progressFishyTheSpeedyWay()
-    print(f"Simulation for Day {day + 1} ran. Total count: {sum(fish_day_count)}")
-
+    print(f"Day {day + 1} simulation ran. Total count: {sum(fish_day_count)}")
 
 print("***" * 20)
 print(f"Final answer for 256 simualations is {sum(fish_day_count)} fishies")
